@@ -6,7 +6,7 @@ import { treeCreateKey, treeDeleteKey } from './initTree/index';
  * treeCreateKey  生成key
  * treeDeleteKey  清除key
  */
-export {
+export  {
     toTreeFnNoIdp,
     toTreeFnHasIdp,
     treeCreateKey,

@@ -42,6 +42,7 @@ const treeCreateKey: TreeCreateKeyType = function (
     list,
     condition = [["children", Array()]]
 ) {
+    if (!list && !condition) return []
     const [newlist, newCondition] = codeData([list, condition])
     return creatFn(newlist, newCondition);
 };
@@ -53,6 +54,7 @@ const treeCreateKey: TreeCreateKeyType = function (
  * @return {tree}
  */
 const treeDeleteKey: TreeDeleteKeyType = function (list, condition) {
+    if (!list && !condition) return []
     const [newlist, newCondition] = codeData([list, condition])
     return deleteFn(newlist, newCondition);
 }
