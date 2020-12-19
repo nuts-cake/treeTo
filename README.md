@@ -1,13 +1,11 @@
 # TreeTo
 
+- update 1.0.1 新增 toTreeFnNoIdp toTreeFnHasIdp 树形数据->平行数据
+- update 1.0.4 新增 treeCreateKey treeDeleteKey 创造/删除->键
+- update 1.0.9 新增 queryAllPid queryOneNode queryPidLine 查询功能->子查父
+- update 1.1.0 优化文档
 
-- \*\* update 1.0.1 新增 toTreeFnNoIdp toTreeFnHasIdp 树形数据->平行数据
-- \*\* update 1.0.3 新增 treeCreateKey treeDeleteKey 创造/删除->键
-- \*\* update 1.0.8 新增 queryAllPid queryOneNode queryPidLine 查询功能->子查父
-
-## 描述
-
-\*\* TreeTo 是一个 JavaScript 对于树形结构的转换以及操作查询的工具库
+## 描述 TreeTo 是一个 JavaScript 对于树形结构的转换以及操作查询的工具库
 
 ## 内容
 
@@ -20,6 +18,7 @@
 - [queryPidLine](#queryPidLine) 树形数据查询-查出整条祖先链 id
 
 ## 版本预告
+
 1. 不同情况下:平行数据->树形数据
 2. 更多常用查询功能
 3. 优化代码
