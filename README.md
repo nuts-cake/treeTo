@@ -3,9 +3,16 @@
 - update 1.0.1 新增 toTreeFnNoIdp toTreeFnHasIdp 树形数据->平行数据
 - update 1.0.4 新增 treeCreateKey treeDeleteKey 创造/删除->键
 - update 1.0.9 新增 queryAllPid queryOneNode queryPidLine 查询功能->子查父
-- update 1.1.0 优化文档
+- update 1.1.1 优化文档
 
 ## 描述 TreeTo 是一个 JavaScript 对于树形结构的转换以及操作查询的工具库
+GitHub:https://github.com/nuts-cake/treeTo
+npm:https://www.npmjs.com/package/treeto
+```
+$ npm install treeto
+
+$ yarn add treeto
+```
 
 ## 内容
 
