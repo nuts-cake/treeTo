@@ -1,5 +1,5 @@
 import { TreeCreateKeyType, TreeDeleteKeyType } from './data.d'
-import { codeData } from '../utils/utils';
+import NutsTips from '../utils/utils';
 // creat 递归
 const creatFn: TreeCreateKeyType = function (list, condition) {
     list.forEach((element) => {
@@ -43,7 +43,7 @@ const treeCreateKey: TreeCreateKeyType = function (
     condition = [["children", Array()]]
 ) {
     if (!list && !condition) return []
-    const [newlist, newCondition] = codeData([list, condition])
+    const [newlist, newCondition] = NutsTips.deepCopy([list, condition])
     return creatFn(newlist, newCondition);
 };
 // delete 母函数
@@ -55,7 +55,7 @@ const treeCreateKey: TreeCreateKeyType = function (
  */
 const treeDeleteKey: TreeDeleteKeyType = function (list, condition) {
     if (!list && !condition) return []
-    const [newlist, newCondition] = codeData([list, condition])
+    const [newlist, newCondition] = NutsTips.deepCopy([list, condition])
     return deleteFn(newlist, newCondition);
 }
 export { treeCreateKey, treeDeleteKey }
